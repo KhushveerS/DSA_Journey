@@ -41,7 +41,7 @@ Each file contains:
 ---
 
 ## 🎯 Goals
-- Solve **300+ problems** before internship season
+- Solve **450+ problems** before internship season
 - Focus on **Medium & Hard** level problems
 - Share solutions that are **easy to understand and interview-ready**
 - Help students revise faster with **topic-based organization**
