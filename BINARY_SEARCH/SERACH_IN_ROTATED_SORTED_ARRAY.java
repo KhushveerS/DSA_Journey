@@ -1,4 +1,3 @@
-package BINARY_SEARCH;
 
 public class SERACH_IN_ROTATED_SORTED_ARRAY {
     public static void main(String[] args) {

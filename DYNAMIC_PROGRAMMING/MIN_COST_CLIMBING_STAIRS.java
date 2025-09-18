@@ -1,4 +1,3 @@
-package DYNAMIC_PROGRAMMING;
 
 public class MIN_COST_CLIMBING_STAIRS {
     public static void main(String[] args) {
