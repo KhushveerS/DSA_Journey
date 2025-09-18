@@ -1,0 +1,62 @@
+package BINARY_SEARCH;
+
+public class SERACH_IN_ROTATED_SORTED_ARRAY {
+    public static void main(String[] args) {
+        System.out.println(search(new int[]{4,5,6,7,0,1,2},0));
+    }
+    public static  int search(int[] nums, int target) {
+
+        int pivot=findpivot(nums);
+        int lefts=binarysearch(nums,0,pivot,target);
+        if(lefts==-1)
+        {
+            int rights=binarysearch(nums,pivot+1,nums.length-1,target);
+            return rights;
+
+        }
+        return lefts;
+    }
+    public static int binarysearch(int arr[],int start,int end,int target)
+    {  int mid=0;
+        while(start<=end)
+        {
+            mid=start+(end-start)/2;
+            if(arr[mid]==target)
+                return mid;
+            else if(arr[mid]>target)
+            {
+                end=mid-1;
+            }
+            else{
+                start=mid+1;
+            }
+        }
+        return -1;
+    }
+    public static int findpivot(int nums[])
+    {   int mid=0;
+        int start=0;
+        int end=nums.length-1;
+        while(start<=end)
+        {
+            mid=start+(end-start)/2;
+            if(mid<end && nums[mid]>nums[mid+1])
+            {
+                return  mid;
+            }
+            if(mid>start && nums[mid]<nums[mid-1])
+            {
+                return mid-1;
+            }
+            if(nums[mid]<nums[start])
+            {
+                end=mid-1;
+            }
+            else{
+                start=mid+1;
+            }
+        }
+        return -1;
+    }
+
+}
