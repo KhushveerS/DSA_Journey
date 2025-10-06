@@ -9,7 +9,17 @@ class two {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
-            map.put(target - nums[i], nums[i]);
+           map.put(nums[i],i);
+        }
+        for(int i=0;i<nums.length;i++)
+        {
+            int remain=target-nums[i];
+            if(map.containsKey(i) && map.get(remain)!=i)
+            {
+                ans[0]=i;
+                ans[i]=map.get(remain);
+            }
+
         }
         return ans;
     }
