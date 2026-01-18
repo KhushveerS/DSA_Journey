@@ -1,6 +1,6 @@
 public class sumofsquare {
     public static void main(String[] args) {
-        System.out.println(maxSumOfSquares(8,8));
+        System.out.println(maxSumOfSquares(8, 8));
     }
     public static String maxSumOfSquares(int num, int sum) {
         String ans="";

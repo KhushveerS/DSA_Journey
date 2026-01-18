@@ -19,10 +19,10 @@ Each file contains:
 
 ## 📊 Progress Tracker
 | Difficulty | Solved |
-|------------|--------|
-| Easy       | 1 ✅    |
-| Medium     | 2 ✅    |
-| Hard       | 0 ✅    |
+|------------|--|
+| Easy       |  |
+| Medium     |  |
+| Hard       |  |
 
 *(Will keep updating as I solve more problems)*
 
@@ -31,12 +31,12 @@ Each file contains:
 ## 📚 Topics Covered
 - ✅ Binary Search
 - ✅ Dynamic Programming
-- ⬜ String
-- ⬜ Graphs
-- ⬜ Backtracking
-- ⬜ Greedy
+- ✅  String
+- ✅  Graphs
+- ✅  Backtracking
+- ✅  Greedy
 - ⬜ Linked List
-- ⬜ Trees
+-  ⬜ Trees
 
 ---
 
